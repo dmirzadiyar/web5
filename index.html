@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Basics - Assignment 5</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My JavaScript Profile</h1>
+
+        <form id="profileForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthYearInput">Birth Year:</label>
+                <input type="number" id="birthYearInput" required>
+            </div>
+
+            <button type="submit">Create / Update Profile</button>
+        </form>
+
+        <div class="profile-card">
+            <h2 id="profileName">Dinislam</h2>
+
+            <p>Birth Year: <span id="birthYear"></span></p>
+
+            <p>Age: <span id="age"></span></p>
+
+            <p>Developer: <span id="developerStatus"></span></p>
+
+            <p>Number of Hobbies: <span id="hobbiesCount"></span></p>
+
+            <h3>My Hobbies</h3>
+
+            <ul id="hobbiesList"></ul>
+
+            <div class="hobby-controls">
+                <input type="text" id="hobbyInput" placeholder="Enter a new hobby">
+
+                <button type="button" id="addHobbyButton">Add Item</button>
+
+                <button type="button" id="removeHobbyButton">Remove Item</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
